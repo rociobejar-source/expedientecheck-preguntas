@@ -1,0 +1,26 @@
+node_modules
+.next
+out
+.vercel
+.env
+.env*.local
+*.log
+dev-server*.log
+dist
+
+# Archivos pesados del estudio de video que no son necesarios para la landing.
+/compositions
+/mi-video
+/output
+/partes
+/skills
+/video-final
+/video-use
+/assets/audio
+/assets/carrusel
+/assets/js
+/assets/videos
+/assets/images/graficos
+/assets/images/mapa
+/assets/images/recortes
+/spreadsheet-build/outputs

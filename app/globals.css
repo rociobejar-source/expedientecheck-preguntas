@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --brand-blue: #0b2341;
+  --brand-beige: #f4efe7;
+  --brand-gold: #d4a62a;
+  --brand-green: #1d8f6a;
+  --brand-red: #d64545;
+  --brand-black: #1c1c1c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(244, 239, 231, 0.96) 0%, rgba(255, 255, 255, 0.98) 52%, #f8faf9 100%);
+  color: var(--brand-black);
+  font-family: Satoshi, "General Sans", "Plus Jakarta Sans", Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(212, 166, 42, 0.32);
+  color: var(--brand-blue);
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+@layer components {
+  .field-label {
+    @apply block text-sm font-semibold leading-6 text-brand-blue;
+  }
+
+  .field-hint {
+    @apply mt-1 text-xs leading-5 text-slate-500;
+  }
+
+  .field-input {
+    @apply mt-2 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-base text-brand-black outline-none transition placeholder:text-slate-400 focus:border-brand-blue focus:ring-4 focus:ring-brand-blue/10;
+  }
+
+  .field-error {
+    @apply mt-2 text-sm font-medium text-brand-red;
+  }
+}
