@@ -23,4 +23,14 @@ dist
 /assets/images/graficos
 /assets/images/mapa
 /assets/images/recortes
-/spreadsheet-build/outputs
+/spreadsheet-build
+
+# Scripts locales del estudio de video.
+/_concat_pucallpa.ps1
+/fix-cooperantes.ps1
+/fix-parte0.ps1
+/gen-audio-ep01-invertePe.js
+/gen-audio-inversion.js
+/render-alertas.ps1
+/render-cooperantes.ps1
+/render-pucallpa.ps1
