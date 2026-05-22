@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
+import SocialLinks from "@/components/social-links";
 
 type FormState = {
   nombre: string;
@@ -333,7 +334,15 @@ export default function QuestionForm() {
             }`}
             role={status === "success" ? "status" : "alert"}
           >
-            {message}
+            <p>{message}</p>
+            {status === "success" ? (
+              <div className="mt-4">
+                <p className="mb-3 text-sm font-semibold text-brand-blue">
+                  También puedes seguir ExpedienteCheck aquí:
+                </p>
+                <SocialLinks variant="success" />
+              </div>
+            ) : null}
           </div>
         ) : null}
 
