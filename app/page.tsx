@@ -1,6 +1,5 @@
 import Image from "next/image";
 import QuestionForm from "@/components/question-form";
-import SocialLinks from "@/components/social-links";
 import logoExpedienteCheck from "../assets/images/logo/logo_expedientecheck.png";
 
 export default function Home() {
@@ -80,12 +79,6 @@ export default function Home() {
               inteligentes y preventivas que ayuden a mejorar la gestión
               pública.
             </p>
-            <div className="mt-6">
-              <p className="mb-3 text-sm font-semibold text-brand-blue">
-                Sigue aprendiendo con ExpedienteCheck:
-              </p>
-              <SocialLinks />
-            </div>
           </div>
         </div>
       </section>

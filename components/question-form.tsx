@@ -338,7 +338,7 @@ export default function QuestionForm() {
             {status === "success" ? (
               <div className="mt-4">
                 <p className="mb-3 text-sm font-semibold text-brand-blue">
-                  También puedes seguir ExpedienteCheck aquí:
+                  Para más información puedes seguir ExpedienteCheck aquí:
                 </p>
                 <SocialLinks variant="success" />
               </div>
